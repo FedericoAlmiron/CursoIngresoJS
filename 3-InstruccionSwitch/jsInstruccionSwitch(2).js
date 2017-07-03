@@ -2,6 +2,25 @@ function Mostrar()
 {
 //tomo la edad  
 var mesDelAño = document.getElementById('mes').value;
+
+if(mesDelAño == "Julio" || mesDelAño == "Agosto")
+{
+  alert("Abrigate que hace frio.");
+}
+else
+ {
+   if(mesDelAño=="Enero"||mesDelAño=="Febrero"||mesDelAño=="Marzo"||mesDelAño=="Abril"||mesDelAño=="Mayo"||mesDelAño=="Junio")
+   alert("Falta para el invierno."); 
+    else
+    {
+      alert("Ya pasamos el frio, ahora calor");
+    }
+ }
+
+
+
+//función con switch
+/*
 switch(mesDelAño)
 {
   case "Julio":
@@ -22,6 +41,7 @@ switch(mesDelAño)
   alert("Ya pasamos el frio, ahora calor!!!.");
   break;
 }
+*/
 
 
 

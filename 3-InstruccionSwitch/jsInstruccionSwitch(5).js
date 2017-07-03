@@ -2,6 +2,15 @@ function Mostrar()
 {
 //tomo la edad  
 var laHora = parseInt(document.getElementById('hora').value);
+if(laHora >=7 && laHora <=11)
+{
+    alert("Es de mañana");
+}
+
+
+
+//función con switch
+/*
 switch(laHora)
 {
     case 7:
@@ -12,6 +21,7 @@ switch(laHora)
     alert("Es de mañana.");
     break;
 }
+*/
 
 //alert (laHora);
 	
