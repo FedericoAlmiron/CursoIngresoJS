@@ -8,7 +8,72 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
+
+var lamparas=35;
+var preciofinal;
+var marca;
+var cantidad;
+var ibrutos;
+
+
 function CalcularPrecio () 
 {
- 	
+    marca=document.getElementById("Marca").value;
+    cantidad=parseInt(document.getElementById("Cantidad").value);
+
+    if(cantidad>=6)//punto A
+    {
+        preciofinal=(lamparas*cantidad)*0.50;
+        document.getElementById("precioDescuento").value=preciofinal;
+    }
+     else if(cantidad==5)//punto B
+      {
+         if(marca=="ArgentinaLuz")
+         {
+         preciofinal=(lamparas*cantidad)*0.40
+         document.getElementById("precioDescuento").value=preciofinal;
+         }
+          else 
+         {
+         preciofinal=(lamparas*cantidad)*0.30
+         document.getElementById("precioDescuento").value=preciofinal;
+         }
+      }
+     else if(cantidad==4)//punto C
+       {  
+         if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+         {
+          preciofinal=(lamparas*cantidad)*0.25
+          document.getElementById("precioDescuento").value=preciofinal;
+         }
+         else
+         {
+           preciofinal=(lamparas*cantidad)*0.20
+           document.getElementById("precioDescuento").value=preciofinal;
+         }
+       }  
+    else if(cantidad==3)//punto D
+       {
+         if(marca=="ArgentinaLuz")  
+         {
+           preciofinal=(lamparas*cantidad)*0.15
+           document.getElementById("precioDescuento").value=preciofinal;
+         }
+         else if(marca=="FelipeLamparas")
+         {
+           preciofinal=(lamparas*cantidad)*0.10
+           document.getElementById("precioDescuento").value=preciofinal;
+         }
+         else
+         {
+           preciofinal=(lamparas*cantidad)*0.05
+           document.getElementById("precioDescuento").value=preciofinal;
+         }
+         
+        if(preciofinal>120)//punto E
+        {
+            ibrutos=preciofinal*0.1
+            alert("IIBB Usted pago $"+preciofinal+", siendo $"+ibrutos+"el impuesto que se pagó.");
+        }
+       }
 }
