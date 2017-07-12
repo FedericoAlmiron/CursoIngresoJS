@@ -30,12 +30,12 @@ function CalcularPrecio ()
       {
          if(marca=="ArgentinaLuz")
          {
-         preciofinal=(lamparas*cantidad)*0.40
+         preciofinal=(lamparas*cantidad)*0.60
          document.getElementById("precioDescuento").value=preciofinal;
          }
           else 
          {
-         preciofinal=(lamparas*cantidad)*0.30
+         preciofinal=(lamparas*cantidad)*0.70
          document.getElementById("precioDescuento").value=preciofinal;
          }
       }
@@ -43,12 +43,12 @@ function CalcularPrecio ()
        {  
          if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
          {
-          preciofinal=(lamparas*cantidad)*0.25
+          preciofinal=(lamparas*cantidad)*0.75
           document.getElementById("precioDescuento").value=preciofinal;
          }
          else
          {
-           preciofinal=(lamparas*cantidad)*0.20
+           preciofinal=(lamparas*cantidad)*0.80
            document.getElementById("precioDescuento").value=preciofinal;
          }
        }  
@@ -56,12 +56,12 @@ function CalcularPrecio ()
        {
          if(marca=="ArgentinaLuz")  
          {
-           preciofinal=(lamparas*cantidad)*0.15
+           preciofinal=(lamparas*cantidad)*0.85
            document.getElementById("precioDescuento").value=preciofinal;
          }
          else if(marca=="FelipeLamparas")
          {
-           preciofinal=(lamparas*cantidad)*0.10
+           preciofinal=(lamparas*cantidad)*0.90
            document.getElementById("precioDescuento").value=preciofinal;
          }
          else

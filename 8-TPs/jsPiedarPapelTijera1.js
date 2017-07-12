@@ -5,15 +5,31 @@ El jugador seleccionará una imagen correspondiente
 a su opción  y le informaremos si ganó, empató o perdió.
 */
 var eleccionMaquina;
+var numero;
+var usuario;
 
 function comenzar()
 {
-	
+    numero=Math.floor((Math.random()*4)+1)
 
 
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
+    switch(numero)
+    {
+        case 1:
+        alert("Perdió.")
+           break;
+        case 2:
+        alert("Empate.")
+           break;
+        case 3:
+        alert("Ganó.")
+           break;      
+        
+    }
+
 	
 
 }//FIN DE LA FUNCIÓN
